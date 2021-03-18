@@ -1,3 +1,4 @@
+html {width:100%;}
 .fontroboto {   font-family: 'Roboto Slab', serif;}
 
 .formdatban h2.text-xs-center.fontroboto {
@@ -1336,9 +1337,9 @@ a.nutslide.fontoswarld.btn.btn-warning {
 /* (2) Màn hình nhỏ để ngang(phones 600px và lớn hơn) */
 @media only screen and (min-width: 600px) {
     *{}
-    html {
+    /*html {
         width:100%;
-    }
+    }*/
 .slidemonan {
     margin-top:0px;
     width:100%;
