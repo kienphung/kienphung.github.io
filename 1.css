@@ -102,7 +102,6 @@ body {
     background-color: white;
     height:700px;
     width:auto;
-    position: relative;
 }
 a.nutslide.btn.btn-warning {
     border-radius: 0;
@@ -1132,13 +1131,18 @@ button.iconsearch {
 
 /*HET CSS CHO COURSE DETAIL*/
 /*XU LY GIAO DIEN DI DONG */
-
-@media (max-width:992px) {
+/* (1) Màn hình nhỏ để đứng (phones, 600px và nhỏ hơn) */
+@media only screen and (max-width: 600px) {
     *{}
-.slidemonan {
+    .slidemonan {
     margin-top:0px;
     width:100%;
-    
+
+}
+.slide { 
+    position: relative;
+    height:400px;
+    z-index: -2;
 }
 .slide1 {
     width:100%;
@@ -1153,39 +1157,64 @@ button.iconsearch {
     left:5%!important;
 }
 .slide-to {
-    z-index:-2;
-    position: relative;
-    box-sizing: border-box;
-    height:400px;
+    height:396px;
 }
 
 .pyramid {
     width:50px;
     
     right:-1px;
-    top:541px;
-    z-index: -1;
+    top:346px;
 }
 .img-to {
     width:330px;
-    position: fixed;
-    z-index: -1;
     right:0px;
-    top: 300px;
-    box-sizing: border-box;
+    position: absolute;
+    bottom:0px;
+}
+.khoiwhychoose_img {
+    width:40%;
+    padding: 25px 25px;
+}
+.khoiwhychoose_noidung {
+    left: 135px;
+    overflow: hidden;
+    height:100px;
+}
+.sloganhome {
+    .padding-top:30px;
 
 }
-/*.img-to {
-    position: absolute;
-    top:300px;
-*/}
+.pyramidslogan {
+    width:130px;
+}
+.slogancontent {
+    font-size: 30px;
+    margin-top:-110px;
+}
 .chu-to {
     font-size: 20px;
     text-align: left;
     position: absolute;
     left: 30px;
-    top: 210px;
-    z-index: -1;
+    top: 35px;
+
+}
+.tencongthuc {
+    margin-left:30px;
+    margin-right:30px;
+    text-align: justify;
+}
+.dongkesanpham {
+    margin:auto;
+    margin-top:40px;
+    margin-bottom: 30px;
+}
+span.bieutuongsanpham1.float-xs-left {
+    margin-left:15px;
+}
+span.bieutuongsanpham3.float-xs-right {
+    margin-right: 15px;
 }
 .logo-magiskator {
     top: 10px;
@@ -1273,7 +1302,7 @@ a.nutslide.fontoswarld.btn.btn-warning {
         margin-left: auto;
         margin-right: auto;
         display: block;
-        width: 100%;
+
         border-bottom: 0px;
     }
 
@@ -1282,7 +1311,7 @@ a.nutslide.fontoswarld.btn.btn-warning {
         padding: 13px 0;
         margin: 0;
         display: block;
-        border-bottom: 1px solid gray;
+        
     }
 
     .datban {
@@ -1303,6 +1332,22 @@ a.nutslide.fontoswarld.btn.btn-warning {
     padding-right: 0px;
     }
 }
+
+/* (2) Màn hình nhỏ để ngang(phones 600px và lớn hơn) */
+@media only screen and (min-width: 600px) {
+    *{}
+}
+
+/* (3) Màn hình cỡ thường để đứng (tablets, 768px và lớn hơn) */
+@media only screen and (min-width: 768px) {
+    *{}
+}
+
+/* (4) Màn hình lớn (laptops/desktops, 992px và lớn hơn) */
+@media only screen and (min-width: 992px) {
+    *{}
+}
+
 
 /*HET GIAO DIEN DI DONG */
 
